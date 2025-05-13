@@ -1,7 +1,5 @@
 # Next.js 13 Crash Course Project
 
-This is a project from my [Next.js 13 Crash Course](https://youtu.be/Y6KDk5iyrYE). It uses the newer features such as:
-
 - App directory
 - New routing system
 - Next Fonts
@@ -12,8 +10,6 @@ This is a project from my [Next.js 13 Crash Course](https://youtu.be/Y6KDk5iyrYE
 - API Route Handlers
 - loading.js Page
 - and more
-
-<img src="./public/screen.png" width="500">
 
 ## Usage
 
