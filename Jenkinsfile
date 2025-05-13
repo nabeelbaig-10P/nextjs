@@ -4,7 +4,6 @@ pipeline {
     environment {
         GITHUB_TOKEN = credentials('GITHUB_TOKEN') 
         OPENAI_API_KEY = credentials('OPENAI_API_KEY')
-        GMAIL_APP_PASS = credentials('GMAIL_APP_PASS')
         DOCKER_USERNAME = credentials('DOCKER_USERNAME')
         DOCKER_PASSWORD = credentials('DOCKER_PASSWORD')
         
