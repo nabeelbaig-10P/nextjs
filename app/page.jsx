@@ -20,7 +20,7 @@ const HomePage = () => {
     fetchCourses();
   }, []);
 
-  if (loading == true) {
+  if (loading === true) {
     return <LoadingPage />;
   } else {
     return (
