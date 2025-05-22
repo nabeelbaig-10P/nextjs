@@ -15,12 +15,12 @@ pipeline {
         stage('Pull and Run Docker Image') {
             steps {
                 script {
-                    bat """
+                    sh """
                         docker login -u ${DOCKER_USERNAME} --password ${DOCKER_PASSWORD}
                     """
-                    bat 'docker pull 10pdocker/ai-pr-bot:latest'
+                    sh 'docker pull 10pdocker/ai-pr-bot:latest'
 
-                    bat """
+                    sh """
                         docker run \
                         -e GITHUB_TOKEN=${GITHUB_TOKEN} \
                         -e GITHUB_PR_SOURCE_REPO_OWNER=${env.GITHUB_PR_SOURCE_REPO_OWNER} \
