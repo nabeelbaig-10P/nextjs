@@ -28,6 +28,7 @@ pipeline {
                         -e GIT_REPOSITORY_URL=${GIT_URL} \
                         -e GITHUB_PR_NUMBER=${GITHUB_PR_NUMBER} \
                         -e DECIDER="GitHub" \
+                        -e GITHUB_SUMMARY=false \
                         10pdocker/e-zpr-bot-summary:disable
                     """
                 }
