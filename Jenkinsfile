@@ -18,7 +18,7 @@ pipeline {
                     sh """
                         docker login -u ${DOCKER_USERNAME} --password ${DOCKER_PASSWORD}
                     """
-                    sh 'docker pull 10pdocker/e-zpr-bot-summary:disable'
+                    sh 'docker pull 10pdocker/ai-pr-bot:latest'
 
                     sh """
                         docker run \
@@ -29,7 +29,7 @@ pipeline {
                         -e GITHUB_PR_NUMBER=${GITHUB_PR_NUMBER} \
                         -e DECIDER="GitHub" \
                         -e GITHUB_SUMMARY=false \
-                        10pdocker/e-zpr-bot-summary:disable
+                        10pdocker/ai-pr-bot:latest
                     """
                 }
             }
