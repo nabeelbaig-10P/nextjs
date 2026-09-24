@@ -1,0 +1,6 @@
+projectKey=nextjs
+serverUrl=http://localhost:9001
+serverVersion=25.5.0.107428
+dashboardUrl=http://localhost:9001/dashboard?id=nextjs
+ceTaskId=0453b926-ca72-4c42-a073-8ff3919b105e
+ceTaskUrl=http://localhost:9001/api/ce/task?id=0453b926-ca72-4c42-a073-8ff3919b105e
